@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sellit.android.cs4251.com.sellit.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp">
+
+    <TextView
+        android:id="@+id/search_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Show All Products"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/search_bar"
+
+        android:layout_alignLeft="@+id/search_bar"
+        android:layout_alignRight="@+id/search_bar"
+        android:layout_alignStart="@+id/search_bar"
+        android:layout_below="@+id/search_bar"
+        android:text="Show All" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_button"
+        android:layout_alignStart="@+id/search_button"
+        android:layout_centerVertical="true"
+        android:id="@+id/relativeLayout2">
+
+        <Button
+            android:id="@+id/Tech"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:text="Tech" />
+
+        <Button
+            android:id="@+id/Motors"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/Tech"
+            android:text="Motors" />
+
+        <Button
+            android:id="@+id/Fashion"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/Motors"
+            android:text="Fashion"
+
+            />
+
+        <Button
+            android:id="@+id/Entertainment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Tech"
+            android:text="Entertainment" />
+
+        <Button
+            android:id="@+id/Leisure"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Tech"
+            android:layout_toRightOf="@id/Entertainment"
+            android:text="Leisure" />
+
+        <Button
+            android:id="@+id/Others"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Tech"
+            android:layout_toRightOf="@id/Leisure"
+            android:text="Others" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/search_button"
+        android:layout_alignRight="@+id/search_button"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Select Category"
+        android:textSize="30sp" />
+
+</RelativeLayout>

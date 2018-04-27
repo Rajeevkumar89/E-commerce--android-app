@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sellit.android.cs4251.com.sellit.SellActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lay"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell Product"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout5"
+        android:layout_alignStart="@+id/relativeLayout5"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="34dp">
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/p_name"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pname"
+            android:layout_toRightOf="@+id/pname" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/p_desc"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/desc"
+            android:layout_toRightOf="@+id/desc" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout5"
+        android:layout_alignStart="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_marginTop="11dp"
+        android:id="@+id/relativeLayout6">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/p_price"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/price"
+            android:layout_toRightOf="@+id/price" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout6"
+        android:layout_alignStart="@+id/relativeLayout6"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeLayout7">
+
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/p_cate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/cat"
+            android:layout_toRightOf="@+id/cat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout7"
+        android:layout_alignStart="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_marginTop="28dp"
+        android:id="@+id/relativeLayout8">
+
+        <TextView
+            android:id="@+id/pic"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Picture"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout7"
+        android:layout_alignRight="@+id/relativeLayout7"
+        android:layout_alignTop="@+id/relativeLayout8"
+android:text="Capture" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Save" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lay"
+        android:layout_alignRight="@+id/lay"
+        android:layout_alignTop="@+id/relativeLayout8"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:minHeight="120dp"
+        android:minWidth="80dp" />
+</RelativeLayout>
